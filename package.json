@@ -1,16 +1,11 @@
 {
-  "name": "deya",
+  "name": "camp-poster-creator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "babel-plugin-emotion": "^8.0.12",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-emotion": "^8.0.12",
-    "react-redux": "^5.0.6",
-    "react-scripts": "1.0.17",
-    "recompose": "^0.26.0",
-    "redux": "^3.7.2"
+    "react-scripts": "1.0.17"
   },
   "scripts": {
     "start": "react-scripts start",
