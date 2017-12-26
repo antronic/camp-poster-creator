@@ -1,6 +1,7 @@
 {
   "name": "camp-poster-creator",
   "version": "0.1.0",
+  "homepage": "https://antronic.github.io/camp-poster-creator/",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
