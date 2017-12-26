@@ -1,21 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled, { injectGlobal } from 'react-emotion';
+import {Provider} from 'react-redux';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+import Card from './components/Card';
+
+import store from './ducky';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+injectGlobal`
+  html, body {
+    background-color: #f76b32;
   }
-}
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+  }
+`
+
+let App = ({ className }) => (
+  <Provider store={store}>
+    <div className={ className }>
+      <Card />
+    </div>
+  </Provider>
+);
+
+App = styled(App)`
+  width: 100%;
+  height: 100%;
+`
 
 export default App;
